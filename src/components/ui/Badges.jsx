@@ -1,8 +1,8 @@
 import { Code, Database, Globe, Server, Terminal } from "lucide-react";
 
-const technologies = ["Python", "Java", "JavaScript", "FastAPI", "Flask", "SQL", "MongoDB", "React", "NextJS"];
+const technologies = ["20 y/o", "3rd year", "Computer Sci. Major", "Data Sci. Minor"];
 
-export default function TechBadges() {
+export default function Badges() {
   return (
     <div className="flex flex-wrap justify-center gap-2 bg-[var(--dark-color)] p-4 rounded-xl">
       {technologies.map((tech, index) => (

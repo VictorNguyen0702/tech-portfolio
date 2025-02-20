@@ -1,5 +1,5 @@
 import { User } from "lucide-react";
-import TechBadges from "./TechBadges";
+import Badges from "./Badges";
 
 const AboutMe = () => {
     return (
@@ -11,7 +11,7 @@ const AboutMe = () => {
         <p className="text-lg font-small text-[var(--dark-color)] leading-relaxed">
           I’m a 3rd-year Advanced Computing student passionate about software development...
         </p>
-        <TechBadges />
+        <Badges />
       </div>
     )
 }
