@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button"
 import ProjectCarousel from "@/components/ui/ProjectCarousel";
 import Header from "@/components/ui/Header"
-import TechStack from "@/components/TechStack";
+import TechStack from "@/components/ui/TechStack";
 export default function Home() {
   return (
     
