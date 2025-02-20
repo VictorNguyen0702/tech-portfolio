@@ -31,7 +31,7 @@ const PortfolioCarousel = () => {
   const plugin = React.useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
 
   return (
-    <div className="w-full max-w-lg mx-auto mt-5">
+    <div className="w-full max-w-lg mx-auto mt-5 relative overflow-visible">
       <Carousel
         opts={{
           loop: true,
