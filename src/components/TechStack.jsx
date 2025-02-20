@@ -30,7 +30,7 @@ export default function TechStack() {
                   {tech.version && <p className="text-sm text-neutral-400">Version {tech.version}</p>}
                 </div>
               </div>
-            <Link className="w-4 h-4" />
+            <Link className="w-4 h-4 text-[var(--light-color)]" />
             </Card>
           </a>
         ))}
