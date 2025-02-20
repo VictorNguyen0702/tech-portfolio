@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 
 const projects = [
@@ -28,7 +28,11 @@ const projects = [
 ];
 
 const PortfolioCarousel = () => {
-  const plugin = React.useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
+  const carouselRef = useRef(null);
+
+
 
   return (
     <div className="w-full max-w-lg mx-auto mt-5">
@@ -39,12 +43,17 @@ const PortfolioCarousel = () => {
         }}
         plugins={[plugin.current]}
         className="w-full"
+        setApi={(api) => {
+          if (api && !carouselRef.current) {
+            carouselRef.current = api;
+            setSelectedIndex(api.selectedScrollSnap()); // Ensure initial index is set
+          }
+        }}
       >
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index} className="p-2">
               <Card className="max-w-md mx-auto border border-gray-700 rounded-xl shadow-lg hover:scale-105 transition-transform bg-[var(--light-color)]">
-
                 <div className="h-56 w-full overflow-hidden rounded-t-xl">
                   <img
                     src={project.image}
@@ -70,9 +79,17 @@ const PortfolioCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="bg-white text-black hover:bg-gray-300" />
-        <CarouselNext className="bg-white text-black hover:bg-gray-300" />
       </Carousel>
+
+      {/* Navigation Dots */}
+      <div className="flex justify-center gap-2 mt-4">
+        {projects.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => carouselRef.current && carouselRef.current.scrollTo(index)}
+            className="h-3 w-3 rounded-full transition bg-gray-500 hover:bg-gray-700"/>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { Code, Database, Globe, Server, Terminal } from "lucide-react";
 
-const technologies = ["20 y/o", "3rd year", "Computer Sci. Major", "Data Sci. Minor"];
+const technologies = ["20 y/o", "3rd year", "USYD", "Computer Sci. Major", "Data Sci. Minor"];
 
 export default function Badges() {
   return (
