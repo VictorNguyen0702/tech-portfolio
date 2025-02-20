@@ -21,18 +21,18 @@ export default function TechStack() {
       {/* Grid for Tech Stack */}
       <div className="grid grid-cols-2 gap-3 mt-4 ">
         {techStack.map((tech, index) => (
-          <Card key={index} className="bg-[var(--dark-color)] border border-neutral-800 rounded-lg hover:shadow-lg hover:shadow-gray-700 flex items-center justify-between p-4">
-            <div className="flex items-center gap-3">
-              <img src={tech.icon} alt={tech.name} className="w-8 h-8" />
-              <div>
-                <p className="text-lg font-medium text-[var(--light-color)]">{tech.name}</p>
-                {tech.version && <p className="text-sm text-neutral-400">Version {tech.version}</p>}
+          <a href={tech.link} key={index} target="_blank" rel="noopener noreferrer" className="text-[var(--light-color)]">
+            < Card className="bg-[var(--dark-color)] border border-neutral-800 rounded-lg hover:shadow-lg hover:shadow-gray-700 flex items-center justify-between p-4 h-20">
+              <div className="flex items-center gap-3">
+                <img src={tech.icon} alt={tech.name} className="w-8 h-8" />
+                <div>
+                  <p className="text-lg font-medium text-[var(--light-color)]">{tech.name}</p>
+                  {tech.version && <p className="text-sm text-neutral-400">Version {tech.version}</p>}
+                </div>
               </div>
-            </div>
-            <a href={tech.link} target="_blank" rel="noopener noreferrer" className="text-[var(--light-color)]">
-              <Link className="w-4 h-4" />
-            </a>
-          </Card>
+            <Link className="w-4 h-4" />
+            </Card>
+          </a>
         ))}
       </div>
     </div>
