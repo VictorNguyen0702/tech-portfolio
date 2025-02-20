@@ -21,7 +21,7 @@ export default function TechStack() {
       {/* Grid for Tech Stack */}
       <div className="grid grid-cols-2 gap-3 mt-4 ">
         {techStack.map((tech, index) => (
-          <Card key={index} className="bg-[var(--dark-color)] border border-neutral-800 rounded-lg flex items-center justify-between p-4">
+          <Card key={index} className="bg-[var(--dark-color)] border border-neutral-800 rounded-lg hover:shadow-lg hover:shadow-gray-700 flex items-center justify-between p-4">
             <div className="flex items-center gap-3">
               <img src={tech.icon} alt={tech.name} className="w-8 h-8" />
               <div>
