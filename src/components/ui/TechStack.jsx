@@ -13,7 +13,7 @@ export default function TechStack() {
     <div className="p-6 bg-[var(--light-color)] rounded-xl border border-neutral-800 text-white w-full max-w-[500px]" >
       {/* Header */}
       <h2 className="text-xl font-bold flex items-center gap-2">
-        <span className="text-purple-400">🛠️</span>
+        <span>🛠️</span>
         <p className= "text-[var(--dark-color)]">My Tech Stack</p>
       </h2>
       <p className="text-sm text-[var(--dark-color)]">My most used tech stack for projects:</p>

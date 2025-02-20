@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    name: "Yet Another WishList",
+    name: "Yet Another WishList (YAWL)",
     description: "A wishlist website for users to save gift ideas",
     image: "imgs/project-filler.png",
     link: "https://github.com/Monkieeboi/yawl"
@@ -20,7 +20,7 @@ const projects = [
     link: "https://github.com/VictorNguyen0702/League-Tracker"
   },
   {
-    name: "Tower Defense 5 Clone",
+    name: "Tower Defense Game",
     description: "A tower defense game based off BTD5",
     image: "imgs/TowerDefence.png",
     link: "https://github.com/VictorNguyen0702/Tower-Defense-Game"
