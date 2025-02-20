@@ -43,7 +43,8 @@ const PortfolioCarousel = () => {
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index} className="p-2">
-              <Card className="max-w-md mx-auto border border-gray-700 rounded-xl shadow-lg bg-[var(--light-color)] hover:scale-105 transition-transform">
+              <Card className="max-w-md mx-auto border border-gray-700 rounded-xl shadow-lg hover:scale-105 transition-transform bg-[var(--light-color)]">
+
                 <div className="h-56 w-full overflow-hidden rounded-t-xl">
                   <img
                     src={project.image}
