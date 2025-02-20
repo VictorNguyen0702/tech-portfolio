@@ -34,6 +34,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
     --light-color: hsl(0, 0%, 73%); /* #BABABA */
+    --grey-color: hsl(0, 0%, 55%);
     --dark-color: hsl(0, 0%, 21%);  /* #363636 */  
   }
 
