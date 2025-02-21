@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[1fr_2fr] min-h-screen mx-auto pb-16 font-[family-name:var(--font-geist-sans)] gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[1fr_1fr_1fr] min-h-screen mx-auto pb-16 font-[family-name:var(--font-geist-sans)] gap-6">
         
         {/* Left Side (AboutMe + TechStack) */}
         <div className="flex flex-col items-center gap-4">
