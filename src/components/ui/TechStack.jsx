@@ -10,8 +10,8 @@ const techStack = [
 
 export default function TechStack() {
   return (
-    <div className="p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 text-white w-full max-w-lg mx-auto">
-      {/* Header */}
+<div className="p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 text-white w-full max-w-[90vw] sm:max-w-lg mx-auto">
+{/* Header */}
       <h2 className="text-xl font-bold flex items-center gap-2">
         <span>🛠️</span>
         <p className= "text-[var(--dark-color)]">My Tech Stack</p>
