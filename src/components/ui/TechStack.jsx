@@ -2,10 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "lucide-react";
 
 const techStack = [
-  { name: "Next.js", version: "15+", icon: "/nextjs.png", link: "https://nextjs.org/" },
-  { name: "ShadCN", version: "", icon: "/shadcn.png", link: "https://ui.shadcn.com/" },
-  { name: "FastAPI", version: "0.115.8", icon: "/fastapi.png", link: "https://fastapi.tiangolo.com/" },
-  { name: "MongoDB", version: "8.0.4", icon: "/mongo.png", link: "https://www.mongodb.com/" },
+  { name: "Next.js", version: "15+", icon: "/imgs/TechStack/nextjs.png", link: "https://nextjs.org/" },
+  { name: "ShadCN", version: "", icon: "/imgs/TechStack/shadcn.png", link: "https://ui.shadcn.com/" },
+  { name: "FastAPI", version: "0.115.8", icon: "/imgs/TechStack/fastapi.png", link: "https://fastapi.tiangolo.com/" },
+  { name: "MongoDB", version: "8.0.4", icon: "/imgs/TechStack/mongo.png", link: "https://www.mongodb.com/" },
 ];
 
 export default function TechStack() {
