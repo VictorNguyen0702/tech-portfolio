@@ -1,17 +1,17 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Link } from "lucide-react";
 
 const techStack = [
-  { name: "Next.js", version: "15+", icon: "/nextjs.png", link: "https://nextjs.org/" },
-  { name: "ShadCN", version: "", icon: "/shadcn.png", link: "https://ui.shadcn.com/" },
-  { name: "FastAPI", version: "0.115.8", icon: "/fastapi.png", link: "https://fastapi.tiangolo.com/" },
-  { name: "MongoDB", version: "8.0.4", icon: "/mongo.png", link: "https://www.mongodb.com/" },
+  { name: "Next.js", version: "15+", icon: "/imgs/TechStack/nextjs.png", link: "https://nextjs.org/" },
+  { name: "ShadCN", version: "", icon: "/imgs/TechStack/shadcn.png", link: "https://ui.shadcn.com/" },
+  { name: "FastAPI", version: "0.115.8", icon: "/imgs/TechStack/fastapi.png", link: "https://fastapi.tiangolo.com/" },
+  { name: "MongoDB", version: "8.0.4", icon: "/imgs/TechStack/mongo.png", link: "https://www.mongodb.com/" },
 ];
 
 export default function TechStack() {
   return (
-<div className="p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 text-white w-full max-w-[90vw] sm:max-w-lg mx-auto">
-{/* Header */}
+    <div className="p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 text-white w-full max-w-[90vw] sm:max-w-lg mx-auto">
+      {/* Header */}
       <h2 className="text-xl font-bold flex items-center gap-2">
         <span>🛠️</span>
         <p className= "text-[var(--dark-color)]">My Tech Stack</p>
