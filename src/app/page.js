@@ -7,21 +7,27 @@ import AboutMe from "@/components/ui/AboutMe";
 
 export default function Home() {
   return (
-    
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20  sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div>
       <Header />
-
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[1fr_2fr] min-h-screen mx-auto pb-16 font-[family-name:var(--font-geist-sans)] gap-6">
         
-      </div>
-      <AboutMe />
-      <TechStack />
-      <ProjectCarousel />
+        {/* Left Side (AboutMe + TechStack) */}
+        <div className="flex flex-col items-center gap-4">
+          <AboutMe />
+          <TechStack />
+        </div>
 
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-      </footer>
-      
+        {/* Middle (ProjectCarousel) */}
+        <div className="flex flex-col items-center justify-start w-full min-h-screen">
+          <ProjectCarousel />
+        </div>
+
+
+
+
+      </div>
+
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </div>
-    
   );
 }
