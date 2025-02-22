@@ -22,13 +22,12 @@ export default function Home() {
         </div>
 
         {/* Right Side (Future Content) */}
-        <div className="flex flex-col items-center justify-start w-full">
-          {/* Add future components here */}
+        <div className="flex flex-col items-center gap-4">
+          <TechBoard />
         </div>
 
       </div>
       <div>
-        <TechBoard />
       </div>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </div>

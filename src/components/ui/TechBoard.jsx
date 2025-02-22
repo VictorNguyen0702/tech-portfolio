@@ -15,34 +15,28 @@ export default function Technologies() {
   ];
 
   return (
-    <section className="text-[var(--dark-color)] py-20">
-      <div className="max-w-5xl mx-auto px-6 py-10 bg-[var(--light-color)] rounded-2xl shadow-lg">
-        <h2 className="text-4xl font-bold mb-4 text-center">Technologies</h2>
-        <p className="text-center text-gray-600 mb-10">
-          Languages, Frameworks, and tools I have worked with.
-        </p>
+      <div className="p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 w-full max-w-[90vw] sm:max-w-lg mx-auto">
 
         <h3 className="text-2xl font-semibold mb-8 text-center">
           Languages and Frameworks
         </h3>
 
         {/* Responsive Grid Layout */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 gap-2">
           {langAndFrame.map((tech, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-6 bg-[var(--dark-color)] rounded-lg shadow-md hover:scale-110 transition-transform"
+              className="flex flex-col items-center justify-center p-2 bg-[var(--dark-color)] rounded-lg shadow-md hover:scale-105 transition-transform"
             >
               <img
                 src={tech.icon}
                 alt={tech.name}
-                className="w-16 h-16 object-contain"
+                className="w-8 h-8 object-contain"
               />
               <p className="mt-3 text-sm text-white">{tech.name}</p>
             </div>
           ))}
         </div>
       </div>
-    </section>
   );
 }
