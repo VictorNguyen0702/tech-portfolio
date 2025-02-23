@@ -3,6 +3,7 @@ import Header from "@/components/ui/Header"
 import TechStack from "@/components/ui/TechStack";
 import TechBoard from "@/components/ui/TechBoard";
 import AboutMe from "@/components/ui/AboutMe";
+import ProjectBoard from "@/components/ui/ProjectBoard";
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
           <TechBoard />
         </div>
 
+      </div>
+      <div className="mx-14">
+        <ProjectBoard />
       </div>
       <div>
       </div>
