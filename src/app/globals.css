@@ -36,7 +36,10 @@ body {
     --light-color: hsl(0, 0%, 73%); /* #BABABA */
     --grey-color: hsl(0, 0%, 55%);
     --dark-black-color: hsl(0, 0%, 10%);
-    --dark-color: hsl(0, 0%, 21%);  /* #363636 */  
+    --dark-color: hsl(0, 0%, 21%);  /* #363636 */
+    --text-color: hsl(0, 0%, 21%);
+    --card-color: hsl(0, 0%, 0%);
+    --button-color: hsl(0, 0%, 0%);
   }
 
   .dark {

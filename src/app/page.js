@@ -10,19 +10,19 @@ export default function Home() {
     <div>
       <Header />
       {/* Body Div */}
-      <div className="pr-8 pb-8 pl-8">
+      <div className="pr-12 pb-12 pl-12">
           {/* Top half of body (Grid) */}
 
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[1fr_1fr_1fr] mx-auto pb-16 font-[family-name:var(--font-geist-sans)] gap-6">
 
             {/* Left Side (AboutMe + TechStack) */}
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4 w-full">
               <AboutMe />
               <TechStack />
             </div>
 
             {/* Middle (ProjectCarousel) */}
-            <div className="flex flex-col items-center justify-start w-full">
+            <div className="flex flex-col items-center justify-start w-full overflow-visible">
               <ProjectCarousel />
             </div>
 
@@ -33,7 +33,7 @@ export default function Home() {
 
           </div>
         {/* Bottom half of body (Project Board) */}
-          <div className="mx-14">
+          <div>
             <ProjectBoard />
           </div>
         </div>
