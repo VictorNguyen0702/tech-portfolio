@@ -35,7 +35,7 @@ const PortfolioCarousel = () => {
 
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-visible">
       <Carousel
         opts={{ loop: true, align: "start" }}
         plugins={[plugin.current]}
@@ -49,13 +49,13 @@ const PortfolioCarousel = () => {
       >
       <CarouselContent>
         {projects.map((project, index) => (
-          <CarouselItem key={index} className="w-full">
-            <Card className="w-full border border-gray-700 rounded-xl shadow-lg hover:scale-105 transition-transform bg-[var(--light-color)] z-10">
+          <CarouselItem key={index} className="w-full overflow-visible">
+            <Card className="w-full border border-gray-700 rounded-xl shadow-lg hover:scale-95 transition-transform bg-[var(--light-color)] overflow-visible">
               <div className="h-48 sm:h-56 md:h-64 lg:h-72 w-full visible rounded-t-xl">
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-full h-full object-cover rounded-xl brightness-90 hover:brightness-100 transition"
+                  className="w-full h-full object-cover rounded-t-xl brightness-90 hover:brightness-100 transition"
                 />
               </div>
               <CardContent className="text-center p-4">
