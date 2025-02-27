@@ -6,7 +6,7 @@ export default function Technologies() {
     { name: "JavaScript", icon: "/imgs/TechBoard/javascript.png" },
     { name: "HTML", icon: "/imgs/TechBoard/html.png" },
     { name: "Tailwind CSS", icon: "/imgs/TechBoard/tailwindcss.png" },
-    { name: "Next.js", icon: "/imgs/TechBoard/javascript.png" },
+    { name: "Next.js", icon: "/imgs/TechBoard/nextjs.png" },
     { name: "React", icon: "/imgs/TechBoard/react.png" },
     { name: "Express", icon: "/imgs/TechBoard/express.png" },
     { name: "FastAPI", icon: "/imgs/TechBoard/fastapi.png" },
@@ -15,9 +15,9 @@ export default function Technologies() {
   ];
 
   return (
-      <div className="p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 w-full max-w-[90vw] sm:max-w-lg mx-auto">
+      <div className="p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 w-full max-w-full sm:max-w-full mx-auto">
 
-        <h3 className="text-2xl font-semibold mb-8 text-center">
+        <h3 className="text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
           Languages and Frameworks
         </h3>
 

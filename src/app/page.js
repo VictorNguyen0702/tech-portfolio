@@ -3,32 +3,40 @@ import Header from "@/components/ui/Header"
 import TechStack from "@/components/ui/TechStack";
 import TechBoard from "@/components/ui/TechBoard";
 import AboutMe from "@/components/ui/AboutMe";
+import ProjectBoard from "@/components/ui/ProjectBoard";
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[1fr_1fr_1fr] mx-auto pb-16 font-[family-name:var(--font-geist-sans)] gap-6">
-        
-        {/* Left Side (AboutMe + TechStack) */}
-        <div className="flex flex-col items-center gap-4">
-          <AboutMe />
-          <TechStack />
-        </div>
+      {/* Body Div */}
+      <div className="pr-12 pb-12 pl-12">
+          {/* Top half of body (Grid) */}
 
-        {/* Middle (ProjectCarousel) */}
-        <div className="flex flex-col items-center justify-start w-full">
-          <ProjectCarousel />
-        </div>
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[1fr_1fr_1fr] mx-auto pb-16 font-[family-name:var(--font-geist-sans)] gap-6">
 
-        {/* Right Side (Future Content) */}
-        <div className="flex flex-col items-center gap-4">
-          <TechBoard />
-        </div>
+            {/* Left Side (AboutMe + TechStack) */}
+            <div className="flex flex-col items-center gap-4 w-full">
+              <AboutMe />
+              <TechStack />
+            </div>
 
-      </div>
-      <div>
-      </div>
+            {/* Middle (ProjectCarousel) */}
+            <div className="flex flex-col items-center justify-start w-full overflow-visible">
+              <ProjectCarousel />
+            </div>
+
+            {/* Right Side (Language + Frameworks) */}
+            <div className="flex flex-col items-center gap-4">
+              <TechBoard />
+            </div>
+
+          </div>
+        {/* Bottom half of body (Project Board) */}
+          <div>
+            <ProjectBoard />
+          </div>
+        </div>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </div>
   );

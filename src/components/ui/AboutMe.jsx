@@ -3,7 +3,7 @@ import Badges from "./Badges";
 
 const AboutMe = () => {
     return (
-        <div className="flex flex-col gap-6 p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 text-white w-full max-w-[90vw] sm:max-w-lg mx-auto">
+        <div className="flex flex-col gap-6 p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 text-white w-full mx-auto">
 
         <h2 className="text-base sm:text-lg md:text-xl font-bold flex items-center gap-2">
           <User size={32} className="text-[var(--dark-color)]" />
