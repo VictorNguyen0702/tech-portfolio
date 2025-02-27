@@ -17,7 +17,7 @@ export default function Technologies() {
   return (
       <div className="p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 w-full max-w-[90vw] sm:max-w-lg mx-auto">
 
-        <h3 className="text-2xl font-semibold mb-8 text-center">
+        <h3 className="text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
           Languages and Frameworks
         </h3>
 
