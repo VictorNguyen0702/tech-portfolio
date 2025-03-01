@@ -26,7 +26,7 @@ const projects = [
 const ProjectBoard = () => {
 
   return (
-    <div className="flex flex-col gap-6 p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 text-white w-full max-w-[full]">
+    <div className="flex flex-col gap-6 p-6 md:p-8 bg-[var(--light-color)] rounded-xl border-0 text-white w-full max-w-[full]">
       <h2 className="text-base text-[var(--dark-color)] sm:text-lg md:text-xl font-bold flex items-center gap-2">
         <p className="">Personal Projects</p>
       </h2>
@@ -36,7 +36,7 @@ const ProjectBoard = () => {
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {projects.map((project, index) => (
-          <Card key={index} className="w-full max-w-lg mx-auto border border-gray-700 rounded-xl shadow-lg hover:scale-105 transition-transform bg-[var(--light-color)]">
+          <Card key={index} className="w-full max-w-lg mx-auto border-0 rounded-xl shadow-lg hover:scale-105 transition-transform bg-[var(--light-color)]">
             <div className="h-48 sm:h-56 md:h-64 lg:h-72 w-full overflow-hidden rounded-t-xl">
               <img src={project.image} alt={project.name} className="w-full h-full object-cover brightness-90 hover:brightness-100 transition"/>
             </div>
