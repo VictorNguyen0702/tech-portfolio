@@ -29,7 +29,7 @@ const projects = [
 
 const PortfolioCarousel = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const plugin = useRef(Autoplay({ delay: 100000000000000000000, stopOnInteraction: false }));
+  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
   const carouselRef = useRef(null);
 
 
