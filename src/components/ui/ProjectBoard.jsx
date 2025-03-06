@@ -1,5 +1,6 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import {Github } from "lucide-react";
 
 const projects = [
   {
@@ -26,18 +27,15 @@ const projects = [
 const ProjectBoard = () => {
 
   return (
-    <div className="flex flex-col gap-6 p-6 md:p-8 bg-[var(--light-color)] rounded-xl border-0 text-white w-full max-w-[full]">
-      <h2 className="text-base text-[var(--dark-color)] sm:text-lg md:text-xl font-bold flex items-center gap-2">
-        <p className="">Personal Projects</p>
+    <div className="px-20 py-10 bg-white w-full mx-auto">
+      <h2 className="text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
+        Featured Projects
       </h2>
-      
-      <p className="text-sm sm:text-base md:text-lg text-[var(--dark-color)] leading-relaxed">
-        Some projects I've worked on are...
-      </p>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {projects.map((project, index) => (
-          <Card key={index} className="w-full max-w-lg mx-auto border-0 rounded-xl shadow-lg hover:scale-105 transition-transform bg-[var(--light-color)]">
-            <div className="h-48 sm:h-56 md:h-64 lg:h-72 w-full overflow-hidden rounded-t-xl">
+          <Card key={index} className=" w-full max-w-lg mx-auto border-0 rounded-xl shadow-lg hover:scale-105 transition-transform bg-[var(--light-color)]">
+            <div className="h-42 sm:h-48 md:h-56 lg:h-64 w-full overflow-hidden rounded-t-xl">
               <img src={project.image} alt={project.name} className="w-full h-full object-cover brightness-90 hover:brightness-100 transition"/>
             </div>
             <CardContent className="text-center p-4">
@@ -54,7 +52,17 @@ const ProjectBoard = () => {
           </Card>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap 4"></div>
+      <div className="flex flex-col justify-center items-center mt-5 lg:my-24 gap-5">
+        <p>To see other projects, check out my GitHub</p>
+        <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-3 justify-center items-center w-[150px]">
+          <Button className="bg-[var(--dark-color)] text-white w-[150px] rounded-full px-4 py-2 transition hover:brightness-75">
+            <img src="imgs/Other/github.svg" alt="github" className="text-[var(--light-color)] w-6"/>
+            <p>Github</p>
+          </Button>
+        </a>
+
+      </div>
+
     </div>
   )
 }
