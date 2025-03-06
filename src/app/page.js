@@ -1,6 +1,7 @@
 
 import Navbar from "@/components/ui/Navbar";
 import Hero from "@/components/ui/Hero";
+import AboutMe from "@/components/ui/AboutMe";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <Hero />
       </section>
       <section id="about-me">
-      
+        <AboutMe />
       </section>
       <section id="skills">
       
