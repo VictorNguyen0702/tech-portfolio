@@ -1,4 +1,4 @@
-import { User } from "lucide-react";
+import {Github, Linkedin, User} from "lucide-react";
 import Technologies from "@/components/ui/TechBoard";
 import TechStack from "@/components/ui/TechStack";
 
@@ -13,6 +13,14 @@ const AboutMe = () => {
           <p className="text-sm sm:text-base md:text-lg text-[var(--dark-color)] leading-relaxed">
             I’m a 3rd-year Advanced Computing student passionate about software development...
           </p>
+          <div className="flex flex-row justify-left pr-10 gap-5 text-[var(--dark-color)]">
+            <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer">
+              <Github />
+            </a>
+            <a href="https://www.linkedin.com/in/victor-nguyen-43dwa/" target="_blank" rel="noopener noreferrer">
+              <Linkedin />
+            </a>
+          </div>
         </div>
         <TechStack />
       </div>
