@@ -54,10 +54,13 @@ const ProjectBoard = () => {
       </div>
       <div className="flex flex-col justify-center items-center mt-5 lg:my-24 gap-5">
         <p>To see other projects, check out my GitHub</p>
-        <Button className="bg-[var(--dark-color)] text-white w-[150px] rounded-full px-4 py-2 transition hover:brightness-75">
-          <img src="imgs/Other/github.svg" alt="github" className="text-[var(--light-color)] w-6"/>
-          <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer">Github</a>
-        </Button>
+        <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-3 justify-center items-center w-[150px]">
+          <Button className="bg-[var(--dark-color)] text-white w-[150px] rounded-full px-4 py-2 transition hover:brightness-75">
+            <img src="imgs/Other/github.svg" alt="github" className="text-[var(--light-color)] w-6"/>
+            <p>Github</p>
+          </Button>
+        </a>
+
       </div>
 
     </div>

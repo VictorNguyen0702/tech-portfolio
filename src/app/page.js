@@ -5,6 +5,7 @@ import AboutMe from "@/components/ui/AboutMe";
 import TechStack from "@/components/ui/TechStack";
 import Technologies from "@/components/ui/TechBoard";
 import ProjectBoard from "@/components/ui/ProjectBoard";
+import Footer from "@/components/ui/Footer";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
         <ProjectBoard />
       </section>
       <section id="footer">
-      
+        <Footer />
       </section>
     </div>
   );
