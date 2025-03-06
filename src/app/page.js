@@ -9,10 +9,8 @@ import Footer from "@/components/ui/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <section id="navbar">
-        <Navbar />
-      </section>
+    <section id="home">
+      <Navbar />
       <section id="hero">
         <Hero />
       </section>
@@ -28,7 +26,7 @@ export default function Home() {
       <section id="footer">
         <Footer />
       </section>
-    </div>
+    </section>
   );
 }
 
