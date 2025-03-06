@@ -2,6 +2,9 @@
 import Navbar from "@/components/ui/Navbar";
 import Hero from "@/components/ui/Hero";
 import AboutMe from "@/components/ui/AboutMe";
+import TechStack from "@/components/ui/TechStack";
+import Technologies from "@/components/ui/TechBoard";
+import ProjectBoard from "@/components/ui/ProjectBoard";
 
 export default function Home() {
   return (
@@ -16,10 +19,10 @@ export default function Home() {
         <AboutMe />
       </section>
       <section id="skills">
-      
+        <Technologies />
       </section>
       <section id="projects">
-      
+        <ProjectBoard />
       </section>
       <section id="footer">
       
