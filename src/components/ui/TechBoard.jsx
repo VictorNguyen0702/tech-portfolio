@@ -37,7 +37,7 @@ export default function Technologies() {
         </h2>
 
         {/* Responsive Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           <Card id="frontend" className="flex flex-col px-7 py-7 gap-2">
             <Code />
             <h3 className="text-lg text-[var(--dark-color)] font-semibold">Frontend</h3>
