@@ -1,5 +1,6 @@
 
 import Navbar from "@/components/ui/Navbar";
+import Hero from "@/components/ui/Hero";
 
 export default function Home() {
   return (
@@ -8,12 +9,12 @@ export default function Home() {
         <Navbar />
       </section>
       <section id="hero">
-      
+        <Hero />
       </section>
       <section id="about-me">
       
       </section>
-      <section id="skills-list">
+      <section id="skills">
       
       </section>
       <section id="projects">

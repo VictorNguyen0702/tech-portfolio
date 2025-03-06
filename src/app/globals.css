@@ -40,6 +40,7 @@ body {
     --text-color: hsl(0, 0%, 21%);
     --card-color: hsl(0, 0%, 0%);
     --button-color: hsl(0, 0%, 0%);
+    --hero-color: hsl(0, 0%, 85%);
   }
 
   .dark {
