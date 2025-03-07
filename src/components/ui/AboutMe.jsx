@@ -10,8 +10,9 @@ const AboutMe = () => {
             <User size={32} className="text-[var(--dark-color)]"/>
             <p className="text-[var(--dark-color)]">About Me</p>
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-[var(--dark-color)] leading-relaxed">
-            I’m a 3rd-year Advanced Computing student passionate about software development...
+          <p className="sm:w-full lg:w-[65%] text-sm sm:text-base md:text-lg text-[var(--dark-color)] leading-relaxed">
+              I’m a 3rd-year Advanced Computing student passionate about backend engineering and AI/ML. I enjoy building scalable systems, optimizing databases, and working with frameworks like TensorFlow and PyTorch.
+
           </p>
           <div className="flex flex-row justify-left pr-10 gap-5 text-[var(--dark-color)]">
             <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer">
