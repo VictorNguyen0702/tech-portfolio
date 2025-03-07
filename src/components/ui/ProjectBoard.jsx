@@ -57,7 +57,7 @@ const ProjectBoard = () => {
           </Card>
         ))}
       </div>
-      <div className="flex flex-col justify-center items-center mt-5 lg:my-24 gap-5">
+      <div className="flex flex-col justify-center items-center mt-5 lg:my-24 gap-8">
         <p>To see other projects, check out my GitHub</p>
         <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-3 justify-center items-center w-[150px]">
           <Button className="bg-[var(--dark-color)] text-white w-full rounded-full px-4 py-2 transition hover:brightness-75">
