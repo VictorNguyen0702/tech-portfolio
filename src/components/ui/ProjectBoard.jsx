@@ -43,12 +43,12 @@ const ProjectBoard = () => {
               <p className="text-sm text-[var(--dark-color)]">{project.description}</p>
               <div className="flex flex-wrap justify-center gap-2 mt-3">
                 {project.tech.map((tech, index) => (
-                    <span className="px-3 py-1 text-xs font-medium text-white bg-[var(--dark-color)] rounded-full">{tech}</span>
+                    <span key={index} className="px-3 py-1 text-xs font-medium text-white bg-[var(--dark-color)] rounded-full">{tech}</span>
                 ))}
               </div>
             </CardContent>
             <CardFooter className="flex justify-center p-4">
-              <Button asChild className="bg-[var(--dark-color)] text-white rounded-full px-4 py-2 transition hover:brightness-75">
+              <Button asChild className="bg-[var(--dark-color)] text-white w-[30%] rounded-full px-4 py-2 transition hover:brightness-75">
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   View Project
                 </a>
@@ -60,7 +60,7 @@ const ProjectBoard = () => {
       <div className="flex flex-col justify-center items-center mt-5 lg:my-24 gap-5">
         <p>To see other projects, check out my GitHub</p>
         <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-3 justify-center items-center w-[150px]">
-          <Button className="bg-[var(--dark-color)] text-white w-[150px] rounded-full px-4 py-2 transition hover:brightness-75">
+          <Button className="bg-[var(--dark-color)] text-white w-full rounded-full px-4 py-2 transition hover:brightness-75">
             <img src="imgs/Other/github.svg" alt="github" className="text-[var(--light-color)] w-6"/>
             <p>Github</p>
           </Button>
