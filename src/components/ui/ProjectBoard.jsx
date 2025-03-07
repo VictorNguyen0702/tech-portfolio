@@ -6,19 +6,16 @@ const projects = [
   {
     name: "Tower Defense Game",
     description: "A tower defense game based off BTD5",
-    image: "imgs/TowerDefence.png",
     link: "https://github.com/VictorNguyen0702/Tower-Defense-Game"
   },
   {
     name: "PriceBite",
     description: "An AI powered app to search economical options for grocery shopping",
-    image: "imgs/project-filler.png",
     link: "https://github.com/yunz-dev/pricebite"
   },
   {
     name: "Yet Another WishList (YAWL)",
     description: "A wishlist website for users to save gift ideas",
-    image: "imgs/project-filler.png",
     link: "https://github.com/Monkieeboi/yawl"
   },
 
@@ -34,9 +31,9 @@ const ProjectBoard = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {projects.map((project, index) => (
-          <Card key={index} className=" w-full max-w-lg mx-auto border-0 rounded-xl shadow-lg hover:scale-105 transition-transform bg-[var(--light-color)]">
-            <div className="h-42 sm:h-48 md:h-56 lg:h-64 w-full overflow-hidden rounded-t-xl">
-              <img src={project.image} alt={project.name} className="w-full h-full object-cover brightness-90 hover:brightness-100 transition"/>
+            <Card key={index} className="w-[90%] mx-auto border-0 rounded-xl shadow-lg hover:scale-110 transition-transform bg-[var(--light-color)]">
+            <div className="h-[25vh] w-full overflow-hidden rounded-t-xl">
+              <img src="imgs/github-project.png" alt={project.name} className="w-full h-full object-cover brightness-10 hover:brightness-100 transition"/>
             </div>
             <CardContent className="text-center p-4">
               <h3 className="text-lg font-bold text-[var(--dark-color)]">{project.name}</h3>
