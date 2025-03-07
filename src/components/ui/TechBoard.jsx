@@ -31,7 +31,7 @@ export default function Technologies() {
   ]
 
   return (
-      <div className="px-20 pt-10 pb-20 bg-[var(--hero-color)] w-full mx-auto">
+      <div className="px-10 lg:px-20 pt-10 pb-20 bg-[var(--hero-color)] w-full mx-auto">
         <h2 className="text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
           Technologies and Skills
         </h2>

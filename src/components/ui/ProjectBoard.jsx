@@ -24,7 +24,7 @@ const projects = [
 const ProjectBoard = () => {
 
   return (
-    <div className="px-20 py-10 bg-white w-full mx-auto">
+    <div className="px-10 lg:px-20 py-10 bg-white w-full mx-auto">
       <h2 className="text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
         Featured Projects
       </h2>
