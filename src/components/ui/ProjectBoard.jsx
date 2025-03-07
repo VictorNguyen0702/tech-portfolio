@@ -6,17 +6,20 @@ const projects = [
   {
     name: "Tower Defense Game",
     description: "A tower defense game based off BTD5",
-    link: "https://github.com/VictorNguyen0702/Tower-Defense-Game"
+    link: "https://github.com/VictorNguyen0702/Tower-Defense-Game",
+    tech: ["Java", "Processing"]
   },
   {
     name: "PriceBite",
     description: "An AI powered app to search economical options for grocery shopping",
-    link: "https://github.com/yunz-dev/pricebite"
+    link: "https://github.com/yunz-dev/pricebite",
+    tech: ["Java", "Python", "Javascript", "SpringBoot", "React"]
   },
   {
     name: "Yet Another WishList (YAWL)",
     description: "A wishlist website for users to save gift ideas",
-    link: "https://github.com/Monkieeboi/yawl"
+    link: "https://github.com/Monkieeboi/yawl",
+    tech: ["Javascript", "Express", "React"]
   },
 
 ];
@@ -38,6 +41,11 @@ const ProjectBoard = () => {
             <CardContent className="text-center p-4">
               <h3 className="text-lg font-bold text-[var(--dark-color)]">{project.name}</h3>
               <p className="text-sm text-[var(--dark-color)]">{project.description}</p>
+              <div className="flex flex-wrap justify-center gap-2 mt-3">
+                {project.tech.map((tech, index) => (
+                    <span className="px-3 py-1 text-xs font-medium text-white bg-[var(--dark-color)] rounded-full">{tech}</span>
+                ))}
+              </div>
             </CardContent>
             <CardFooter className="flex justify-center p-4">
               <Button asChild className="bg-[var(--dark-color)] text-white rounded-full px-4 py-2 transition hover:brightness-75">
