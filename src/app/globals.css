@@ -41,6 +41,7 @@ body {
     --card-color: hsl(0, 0%, 0%);
     --button-color: hsl(0, 0%, 0%);
     --hero-color: hsl(0, 0%, 85%);
+    --text-hover-color: hsl(240, 100%, 19.6%);
   }
 
   .dark {

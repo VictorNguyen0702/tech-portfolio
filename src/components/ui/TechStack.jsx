@@ -19,7 +19,7 @@ export default function TechStack() {
       <p className="text-sm text-[var(--dark-color)]">My most used tech stack for projects:</p>
 
       {/* Grid for Tech Stack */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-3 mt-4 ">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 mt-4 ">
         {techStack.map((tech, index) => (
           <a href={tech.link} key={index} target="_blank" rel="noopener noreferrer" className="text-[var(--light-color)]">
             < Card className="bg-[var(--dark-color)] border border-neutral-800 rounded-lg hover:shadow-lg hover:shadow-gray-700 flex items-center justify-between p-4 h-20">

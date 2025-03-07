@@ -4,34 +4,35 @@ import {Code, Database, Server} from "lucide-react";
 export default function Technologies() {
 
   const frontend = [
-    { name: "JavaScript", icon: "/imgs/TechBoard/javascript.png" },
-    { name: "HTML", icon: "/imgs/TechBoard/html.png" },
-    { name: "Tailwind CSS", icon: "/imgs/TechBoard/tailwindcss.png" },
-    { name: "Next.js", icon: "/imgs/TechBoard/nextjs.png" },
-    { name: "React", icon: "/imgs/TechBoard/react.png" },
+    { name: "JavaScript"},
+    { name: "HTML"},
+    { name: "Tailwind CSS"},
+    { name: "Next.js"},
+    { name: "React"},
     {}
   ]
 
   const backend = [
-    { name: "Python", icon: "/imgs/TechBoard/python.png" },
-    { name: "Java", icon: "/imgs/TechBoard/java.png" },
-    { name: "C", icon: "/imgs/TechBoard/c.png" },
-    { name: "Express", icon: "/imgs/TechBoard/express.png" },
-    { name: "FastAPI", icon: "/imgs/TechBoard/fastapi.png" },
-    { name: "SpringBoot", icon: "/imgs/TechBoard/springboot.png"}
+    { name: "Python"},
+    { name: "Java"},
+    { name: "C"},
+    { name: "Express"},
+    { name: "FastAPI"},
+    { name: "SpringBoot"}
   ]
 
   const tools = [
-    { name: "MongoDB", icon: "/imgs/TechBoard/mongodb.png" },
-    { name: "SQL", icon: "/imgs/TechBoard/sql.png" },
-    { name: "AWS (Learning)", icon: "/imgs/TechBoard/aws.png" },
-    {},
-    {},
-    {}
+    { name: "Docker"},
+    { name: "GitHub"},
+    { name: "GitHub Actions"},
+    { name: "MongoDB"},
+    { name: "SQL"},
+    { name: "AWS (Learning)"}
+
   ]
 
   return (
-      <div className="px-20 pt-10 pb-20 bg-[var(--hero-color)] w-full mx-auto">
+      <div className="px-10 lg:px-20 pt-10 pb-20 bg-[var(--hero-color)] w-full mx-auto">
         <h2 className="text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
           Technologies and Skills
         </h2>
