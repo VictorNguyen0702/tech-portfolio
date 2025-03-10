@@ -10,13 +10,13 @@ const techStack = [
 
 export default function TechStack() {
   return (
-    <div className="p-6 md:p-8 bg-[var(--light-color)] rounded-xl border border-neutral-800 w-full max-w-full mx-auto">
+    <div className="p-6 md:p-8 bg-[var(--hero-color)] rounded-xl w-full max-w-full mx-auto">
       {/* Header */}
       <h2 className="text-xl font-bold flex items-center gap-2">
         <span>🛠️</span>
         <p className= "text-[var(--dark-color)]">My Tech Stack</p>
       </h2>
-      <p className="text-sm sm:text-sm md:text-base 2xl:text-xl  text-[var(--dark-color)]">My most used tech stack for projects:</p>
+      <p className="text-md 2xl:text-xl  text-[var(--dark-color)]">My most used tech stack for projects:</p>
 
       {/* Grid for Tech Stack */}
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 mt-4 ">
