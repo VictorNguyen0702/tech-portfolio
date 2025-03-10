@@ -34,7 +34,7 @@ export default function Navbar() {
             <Menu />
           </Button>
         </SheetTrigger>
-        <SheetContent side="left">
+        <SheetContent side="left" className="bg-[var(--grey-color)]">
           <div className="flex flex-col space-y-4 mt-6">
             <motion.a href="#home" className="hover:text-[var(--text-hover-color)]" onClick={(e) => { e.preventDefault(); handleScroll('home');}}>Home</motion.a>
             <motion.a href="#about-me" className="hover:text-[var(--text-hover-color)]" onClick={(e) => { e.preventDefault(); handleScroll('about-me');}}>About Me</motion.a>
