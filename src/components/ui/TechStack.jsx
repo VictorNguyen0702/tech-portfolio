@@ -16,7 +16,7 @@ export default function TechStack() {
         <span>🛠️</span>
         <p className= "text-[var(--dark-color)]">My Tech Stack</p>
       </h2>
-      <p className="text-sm text-[var(--dark-color)]">My most used tech stack for projects:</p>
+      <p className="text-sm sm:text-sm md:text-base 2xl:text-xl  text-[var(--dark-color)]">My most used tech stack for projects:</p>
 
       {/* Grid for Tech Stack */}
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 mt-4 ">
