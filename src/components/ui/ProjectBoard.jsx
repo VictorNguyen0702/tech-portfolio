@@ -51,7 +51,7 @@ const ProjectBoard = () => {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-center p-4">
-                <Button asChild className="text-md bg-polarDark text-white w-[30%] rounded-full px-4 py-2">
+                <Button asChild className="text-md bg-polarDark text-white min-w-[120px] w-[30%] rounded-full px-4 py-2">
                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block transition-transform duration-300 hover:-translate-y-1">
                     View Project
                   </a>
