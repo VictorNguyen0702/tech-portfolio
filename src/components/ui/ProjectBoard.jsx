@@ -1,6 +1,6 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Folder, FolderKanban } from "lucide-react";
+import { Github, FolderKanban } from "lucide-react";
 import FadeIn from "@/components/ui/FadeIn";
 
 const projects = [
@@ -51,8 +51,8 @@ const ProjectBoard = () => {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-center p-4">
-                <Button asChild className="text-md bg-[var(--dark-color)] text-white w-[30%] rounded-full px-4 py-2 transition hover:brightness-75">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <Button asChild className="text-md bg-[var(--dark-color)] text-white w-[30%] rounded-full px-4 py-2">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block transition-transform duration-300 hover:-translate-y-1">
                     View Project
                   </a>
                 </Button>
@@ -62,9 +62,9 @@ const ProjectBoard = () => {
         </div>
         <div className="flex flex-col justify-center items-center mt-5 lg:my-24 gap-8">
           <p>To see other projects, check out my GitHub</p>
-          <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-3 justify-center items-center w-[150px]">
-            <Button className="bg-[var(--dark-color)] text-md text-white w-full rounded-full px-4 py-2 transition hover:brightness-75">
-              <img src="imgs/Other/github.svg" alt="github" className="text-[var(--light-color)] w-6"/>
+          <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-3 justify-center items-center w-[8%] transition-transform duration-300 hover:-translate-y-1">
+            <Button className="bg-[var(--dark-color)] text-md text-white w-full rounded-full px-4 py-2">
+              <Github />
               <p>Github</p>
             </Button>
           </a>
