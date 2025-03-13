@@ -1,8 +1,8 @@
 'use client';
+import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
-import React from 'react';
+import { House, Menu, User, Wrench, FolderKanban } from "lucide-react";
 import { motion } from 'framer-motion';
 
 
@@ -17,15 +17,27 @@ export default function Navbar() {
       });
     }
   return (
-    <nav className="w-full bg-white shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
+    <nav className="w-full bg-polarDark shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
       <div className="text-lg font-bold"></div>
 
       {/* Desktop Navigation (Hidden on Small Screens) */}
-        <div className="hidden md:flex space-x-6 gap-10 pr-40">
-          <motion.a href="#home" className="hover:text-[var(--text-hover-color)]" onClick={(e) => { e.preventDefault(); handleScroll('home');}}>Home</motion.a>
-          <motion.a href="#about-me" className="hover:text-[var(--text-hover-color)]" onClick={(e) => { e.preventDefault(); handleScroll('about-me');}}>About Me</motion.a>
-          <motion.a href="#skills" className="hover:text-[var(--text-hover-color)]" onClick={(e) => { e.preventDefault(); handleScroll('skills');}}>Skills</motion.a>
-          <motion.a href="#projects" className="hover:text-[var(--text-hover-color)]" onClick={(e) => { e.preventDefault(); handleScroll('projects');}}>Projects</motion.a>
+        <div className="hidden md:flex text-snowMid1 space-x-6 gap-10 pr-40">
+          <motion.a href="#home" className="flex flex-row gap-2 items-center inline-block transition-transform duration-300 hover:-translate-y-1" onClick={(e) => { e.preventDefault(); handleScroll('home');}}>
+            <House />
+            Home
+          </motion.a>
+          <motion.a href="#about-me" className="flex flex-row gap-2 inline-block transition-transform duration-300 hover:-translate-y-1" onClick={(e) => { e.preventDefault(); handleScroll('about-me');}}>
+            <User />
+            About Me
+          </motion.a>
+          <motion.a href="#skills" className="flex flex-row gap-2  inline-block transition-transform duration-300 hover:-translate-y-1" onClick={(e) => { e.preventDefault(); handleScroll('skills');}}>
+            <Wrench />
+            Skills
+          </motion.a>
+          <motion.a href="#projects" className="flex flex-row gap-2  inline-block transition-transform duration-300 hover:-translate-y-1" onClick={(e) => { e.preventDefault(); handleScroll('projects');}}>
+            <FolderKanban />
+            Projects
+          </motion.a>
         </div>
       {/* Mobile Navigation - Sheet (Sidebar) */}
       <Sheet>
@@ -34,12 +46,24 @@ export default function Navbar() {
             <Menu />
           </Button>
         </SheetTrigger>
-        <SheetContent side="left" className="bg-[var(--grey-color)]">
-          <div className="flex flex-col space-y-4 mt-6">
-            <motion.a href="#home" className="hover:text-[var(--text-hover-color)]" onClick={(e) => { e.preventDefault(); handleScroll('home');}}>Home</motion.a>
-            <motion.a href="#about-me" className="hover:text-[var(--text-hover-color)]" onClick={(e) => { e.preventDefault(); handleScroll('about-me');}}>About Me</motion.a>
-            <motion.a href="#skills" className="hover:text-[var(--text-hover-color)]" onClick={(e) => { e.preventDefault(); handleScroll('skills');}}>Skills</motion.a>
-            <motion.a href="#projects" className="hover:text-[var(--text-hover-color)]" onClick={(e) => { e.preventDefault(); handleScroll('projects');}}>Projects</motion.a>
+        <SheetContent side="left" className="bg-polarDark">
+          <div className="flex flex-col text-snowMid1 space-y-4 mt-6">
+            <motion.a href="#home" className="flex flex-row gap-2 items-center inline-block transition-transform duration-300 hover:-translate-y-1" onClick={(e) => { e.preventDefault(); handleScroll('home');}}>
+              <House />
+              Home
+            </motion.a>
+            <motion.a href="#about-me" className="flex flex-row gap-2 inline-block transition-transform duration-300 hover:-translate-y-1" onClick={(e) => { e.preventDefault(); handleScroll('about-me');}}>
+              <User />
+              About Me
+            </motion.a>
+            <motion.a href="#skills" className="flex flex-row gap-2  inline-block transition-transform duration-300 hover:-translate-y-1" onClick={(e) => { e.preventDefault(); handleScroll('skills');}}>
+              <Wrench />
+              Skills
+            </motion.a>
+            <motion.a href="#projects" className="flex flex-row gap-2  inline-block transition-transform duration-300 hover:-translate-y-1" onClick={(e) => { e.preventDefault(); handleScroll('projects');}}>
+              <FolderKanban />
+              Projects
+            </motion.a>
           </div>
         </SheetContent>
       </Sheet>
