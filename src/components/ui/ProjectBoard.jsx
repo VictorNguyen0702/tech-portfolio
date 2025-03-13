@@ -62,7 +62,7 @@ const ProjectBoard = () => {
         </div>
         <div className="flex flex-col justify-center items-center mt-5 lg:my-24 gap-8">
           <p>To see other projects, check out my GitHub</p>
-          <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-3 justify-center items-center w-[8%] transition-transform duration-300 hover:-translate-y-1">
+          <a href="https://github.com/VictorNguyen0702" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-3 justify-center items-center min-w-[100px] w-[8%] transition-transform duration-300 hover:-translate-y-1">
             <Button className="bg-polarDark text-md text-white w-full rounded-full px-4 py-2">
               <Github />
               <p>Github</p>
