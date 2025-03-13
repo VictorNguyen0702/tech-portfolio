@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import {Code, Database, Server} from "lucide-react";
+import { Code, Database, Server, Wrench } from "lucide-react";
 import FadeIn from "@/components/ui/FadeIn";
 export default function Technologies() {
 
@@ -35,7 +35,8 @@ export default function Technologies() {
       <div className="px-10 lg:px-20 pt-10 pb-20 bg-[var(--hero-color)] w-full mx-auto">
         <FadeIn className="">
 
-          <h2 className="text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
+          <h2 className="flex flex-row gap-5 items-center justify-center text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
+            <Wrench />
             Technologies and Skills
           </h2>
     

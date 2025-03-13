@@ -1,6 +1,6 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import {Github } from "lucide-react";
+import { Folder, FolderKanban } from "lucide-react";
 import FadeIn from "@/components/ui/FadeIn";
 
 const projects = [
@@ -30,7 +30,8 @@ const ProjectBoard = () => {
   return (
     <div className="px-10 lg:px-20 py-10 bg-white w-full mx-auto">
       <FadeIn>
-        <h2 className="text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
+        <h2 className="flex flex-row gap-5 items-center justify-center text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
+          <FolderKanban />
           Featured Projects
         </h2>
 
