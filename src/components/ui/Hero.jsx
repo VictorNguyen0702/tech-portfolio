@@ -15,7 +15,7 @@ const Hero = () => {
       });
     }
     return (
-      <div className="bg-cover brightness-75" style={{ backgroundImage: "url('/background-image.png')" }}>
+      <div className="bg-cover" style={{ backgroundImage: "url('/background-image.png')" }}>
         <FadeIn className="flex flex-col items-left justify-left px-10 py-20 lg:p-20 gap-5">
           <div className="text-3xl text-snowLight font-bold sm:w-full lg:w-[30%]">Computer Science Student and Aspiring Backend Developer</div>
           <div className="text-lg text-snowLight sm:w-full lg:w-[30%]">Tech enthusiast and software developer who loves turning ideas into functional applications</div>
