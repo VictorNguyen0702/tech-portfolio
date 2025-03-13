@@ -41,13 +41,13 @@ export default function Technologies() {
           </h2>
     
           {/* Responsive Grid Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 ">
             <Card id="frontend" className="flex flex-col px-7 py-7 gap-2 bg-snowDark">
               <Code />
               <h3 className="text-lg text-[var(--dark-color)] font-semibold">Frontend</h3>
-              <div id="frontend-tech" className="flex flex-col gap-2">
+              <div id="frontend-tech" className="flex flex-col gap-2 text-[var(--dark-color)]">
                 {frontend.map((item, index) => (
-                  <div key={index} className="flex flex-row">
+                  <div key={index} className="flex flex-row ">
                     {item.name}
                   </div>
                 ))}
@@ -56,7 +56,7 @@ export default function Technologies() {
             <Card id="backend" className="flex flex-col px-7 py-7 gap-2 bg-snowDark">
               <Server />
               <h3 className="text-lg text-[var(--dark-color)] font-semibold">Backend</h3>
-              <div id="backend-tech" className="flex flex-col gap-2">
+              <div id="backend-tech" className="flex flex-col gap-2 text-[var(--dark-color)]">
                 {backend.map((item, index) => (
                   <div key={index} className="flex flex-row">
                     {item.name}
@@ -67,7 +67,7 @@ export default function Technologies() {
             <Card id="tools" className="flex flex-col px-7 py-7 gap-2 bg-snowDark">
               <Database />
               <h3 className="text-lg text-[var(--dark-color)] font-semibold">Tools</h3>
-              <div id="tools-tech" className="flex flex-col gap-2">
+              <div id="tools-tech" className="flex flex-col gap-2 text-[var(--dark-color)]">
                 {tools.map((item, index) => (
                   <div key={index} className="flex flex-row">
                     {item.name}
