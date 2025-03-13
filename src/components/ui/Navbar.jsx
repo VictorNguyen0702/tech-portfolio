@@ -42,7 +42,7 @@ export default function Navbar() {
       {/* Mobile Navigation - Sheet (Sidebar) */}
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="ghost" size="icon" className="md:hidden">
+          <Button variant="ghost" size="icon" className="md:hidden text-snowMid2">
             <Menu />
           </Button>
         </SheetTrigger>
