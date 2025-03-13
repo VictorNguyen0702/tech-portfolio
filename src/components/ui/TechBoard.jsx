@@ -32,7 +32,7 @@ export default function Technologies() {
   ]
 
   return (
-      <div className="px-10 lg:px-20 pt-10 pb-20 bg-[var(--hero-color)] w-full mx-auto">
+      <div className="px-10 lg:px-20 pt-10 pb-20 bg-snowMid2 w-full mx-auto">
         <FadeIn className="">
 
           <h2 className="flex flex-row gap-5 items-center justify-center text-2xl text-[var(--dark-color)] font-semibold mb-8 text-center">
@@ -42,7 +42,7 @@ export default function Technologies() {
     
           {/* Responsive Grid Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-            <Card id="frontend" className="flex flex-col px-7 py-7 gap-2">
+            <Card id="frontend" className="flex flex-col px-7 py-7 gap-2 bg-snowDark">
               <Code />
               <h3 className="text-lg text-[var(--dark-color)] font-semibold">Frontend</h3>
               <div id="frontend-tech" className="flex flex-col gap-2">
@@ -53,7 +53,7 @@ export default function Technologies() {
                 ))}
               </div>
             </Card>
-            <Card id="backend" className="flex flex-col px-7 py-7 gap-2">
+            <Card id="backend" className="flex flex-col px-7 py-7 gap-2 bg-snowDark">
               <Server />
               <h3 className="text-lg text-[var(--dark-color)] font-semibold">Backend</h3>
               <div id="backend-tech" className="flex flex-col gap-2">
@@ -64,7 +64,7 @@ export default function Technologies() {
                 ))}
               </div>
             </Card>
-            <Card id="tools" className="flex flex-col px-7 py-7 gap-2">
+            <Card id="tools" className="flex flex-col px-7 py-7 gap-2 bg-snowDark">
               <Database />
               <h3 className="text-lg text-[var(--dark-color)] font-semibold">Tools</h3>
               <div id="tools-tech" className="flex flex-col gap-2">

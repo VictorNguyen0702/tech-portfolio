@@ -10,7 +10,7 @@ const techStack = [
 
 export default function TechStack() {
   return (
-    <div className="p-6 md:p-8 bg-[var(--hero-color)] rounded-xl w-full max-w-full mx-auto">
+    <div className="p-6 md:p-8 bg-snowMid1 rounded-xl w-full max-w-full mx-auto">
       {/* Header */}
       <h2 className="text-xl font-bold flex items-center gap-2">
         <span>🛠️</span>
@@ -22,7 +22,7 @@ export default function TechStack() {
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 mt-4 ">
         {techStack.map((tech, index) => (
           <a href={tech.link} key={index} target="_blank" rel="noopener noreferrer" className="text-[var(--light-color)]">
-            < Card className="bg-[var(--dark-color)] border border-neutral-800 rounded-lg hover:shadow-lg hover:shadow-gray-700 flex items-center justify-between p-4 h-20">
+            < Card className="bg-polarDark border border-neutral-800 rounded-lg hover:shadow-lg hover:shadow-gray-700 flex items-center justify-between p-4 h-20">
               <div className="flex items-center gap-3">
                 <img src={tech.icon} alt={tech.name} className="w-8 h-8" />
                 <div>
