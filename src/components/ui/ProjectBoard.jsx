@@ -37,7 +37,7 @@ const ProjectBoard = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
-              <Card key={index} className="w-full mx-auto border-0 rounded-xl shadow-lg hover:scale-105 transition-transform bg-snowMid1">
+              <Card key={index} className="w-full mx-auto border-0 rounded-xl shadow-xl hover:shadow-gray-700 transition-transform bg-snowMid1">
               <div className="h-[25vh] w-full overflow-hidden rounded-t-xl">
                 <img src="imgs/github-project.png" alt={project.name} className="w-full h-full object-cover brightness-10 hover:brightness-100 transition"/>
               </div>
